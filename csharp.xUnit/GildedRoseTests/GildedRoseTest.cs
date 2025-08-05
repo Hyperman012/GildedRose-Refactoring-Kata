@@ -1,6 +1,8 @@
-﻿using Xunit;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Xunit;
 using GildedRoseKata;
+using VerifyXunit;
 
 namespace GildedRoseTests;
 
@@ -14,4 +16,5 @@ public class GildedRoseTest
         app.UpdateQuality();
         Assert.Equal("fixme", Items[0].Name);
     }
+  
 }
