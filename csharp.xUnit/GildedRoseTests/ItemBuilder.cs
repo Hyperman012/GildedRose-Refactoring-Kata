@@ -2,55 +2,55 @@ using GildedRoseKata;
 
 namespace GildedRoseTests;
 
-public class CompleteItemBuilder()
+public class ItemBuilder()
 {
     private string _name = "pants";
     private int _sellIn = 15;
     private int _quality = 20;
 
-    public CompleteItemBuilder WithMinQuality()
+    public ItemBuilder WithMinQuality()
     {
         return WithQuality(0);
     }
     
-    public CompleteItemBuilder WithMaxQuality()
+    public ItemBuilder WithMaxQuality()
     {
         return WithQuality(50);
     }
     
-    public CompleteItemBuilder AsBackstagePass()
+    public ItemBuilder AsBackstagePass()
     {
         return WithName("Backstage passes to a TAFKAL80ETC concert");
     }
     
-    public CompleteItemBuilder AsAgedBrie()
+    public ItemBuilder AsAgedBrie()
     {
         return WithName("Aged Brie");
     }
 
-    public CompleteItemBuilder AsSulfuras()
+    public ItemBuilder AsSulfuras()
     {
         return WithName("Sulfuras, Hand of Ragnaros");
     }
     
-    public CompleteItemBuilder AsExpired()
+    public ItemBuilder AsExpired()
     {
         return WithSellIn(0);
     }
     
-    public CompleteItemBuilder WithName(string name)
+    public ItemBuilder WithName(string name)
     {
         _name = name;
         return this;
     }
 
-    public CompleteItemBuilder WithSellIn(int sellIn)
+    public ItemBuilder WithSellIn(int sellIn)
     { 
         _sellIn = sellIn;
         return this;
     }
 
-    public CompleteItemBuilder WithQuality(int quality)
+    public ItemBuilder WithQuality(int quality)
     {
         _quality = quality;
         return this;
