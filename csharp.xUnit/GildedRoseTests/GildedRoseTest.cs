@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Xunit;
 using GildedRoseKata;
-using VerifyXunit;
 
 namespace GildedRoseTests;
 
